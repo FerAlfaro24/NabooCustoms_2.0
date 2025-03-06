@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/naboo_logo"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="MENÚ PRINCIPAL"
+        style="@style/FuturisticTitle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        style="@style/FuturisticCard">
+
+        <Button
+            android:id="@+id/btnNavesYDioramas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NAVES/DIORAMAS"
+            style="@style/Widget.FuturisticButton"/>
+
+        <Button
+            android:id="@+id/btnCatalogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="CATÁLOGO"
+            style="@style/Widget.FuturisticButton"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:background="@drawable/futuristic_card_background"
+        android:padding="12dp">
+
+        <ImageButton
+            android:id="@+id/btnInstagram"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:padding="0dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/instagram"/>
+
+        <ImageButton
+            android:id="@+id/btnFacebook"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:scaleType="fitCenter"
+            android:padding="0dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/facebook"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permisos de Bluetooth -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <!-- Permisos para Android 12+ -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+
+    <!-- Permisos de ubicación (para descubrir dispositivos Bluetooth en Android 6+) -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!-- Para Android 10+ (necesario para acceder a la ubicación en segundo plano) -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <!-- Para Android 9+ (necesario para usar Bluetooth en segundo plano) -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BluetoothLedControl"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!-- Actividad principal (IntroVideoActivity) -->
+        <activity
+            android:name=".IntroVideoActivity"
+            android:exported="true"
+            android:theme="@style/Theme.BluetoothLedControl">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Otras actividades -->
+        <activity android:name=".LoginActivity" android:theme="@style/Theme.BluetoothLedControl"/>
+        <activity android:name=".MainMenuActivity" android:theme="@style/Theme.BluetoothLedControl"/>
+        <activity android:name=".SelectionActivity" android:theme="@style/Theme.BluetoothLedControl"/>
+        <activity android:name=".NavesActivity" android:theme="@style/Theme.BluetoothLedControl"/>
+        <activity android:name=".MainActivity" android:theme="@style/Theme.BluetoothLedControl"/>
+        <activity android:name=".DioramasActivity" android:theme="@style/Theme.BluetoothLedControl"/>
+    </application>
+
+</manifest>

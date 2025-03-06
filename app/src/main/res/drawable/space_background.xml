@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo con gradiente -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="1000dp"
+                android:startColor="#0D1137"
+                android:centerColor="#1A237E"
+                android:endColor="#000000" />
+        </shape>
+    </item>
+    
+    <!-- Capa de brillo superior -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="45"
+                android:startColor="#00FFFFFF"
+                android:centerColor="#15FFFFFF"
+                android:endColor="#00FFFFFF"
+                android:type="linear"/>
+        </shape>
+    </item>
+    
+    <!-- Puntos brillantes simulando estrellas -->
+    <item android:gravity="center">
+        <shape android:shape="oval">
+            <size android:width="2dp" android:height="2dp"/>
+            <solid android:color="#40FFFFFF"/>
+        </shape>
+    </item>
+    
+    <item android:gravity="top|start" android:top="50dp" android:left="30dp">
+        <shape android:shape="oval">
+            <size android:width="3dp" android:height="3dp"/>
+            <solid android:color="#80FFFFFF"/>
+        </shape>
+    </item>
+    
+    <item android:gravity="top|end" android:top="100dp" android:right="50dp">
+        <shape android:shape="oval">
+            <size android:width="2dp" android:height="2dp"/>
+            <solid android:color="#60FFFFFF"/>
+        </shape>
+    </item>
+    
+    <item android:gravity="bottom|start" android:bottom="150dp" android:left="80dp">
+        <shape android:shape="oval">
+            <size android:width="4dp" android:height="4dp"/>
+            <solid android:color="#90FFFFFF"/>
+        </shape>
+    </item>
+    
+    <item android:gravity="bottom|end" android:bottom="80dp" android:right="40dp">
+        <shape android:shape="oval">
+            <size android:width="3dp" android:height="3dp"/>
+            <solid android:color="#70FFFFFF"/>
+        </shape>
+    </item>
+</layer-list> 

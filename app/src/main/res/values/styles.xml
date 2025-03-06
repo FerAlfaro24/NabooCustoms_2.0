@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo para títulos -->
+    <style name="FuturisticTitle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Estilo para texto normal -->
+    <style name="FuturisticText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#E0E0E0</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <!-- Estilo para tarjetas -->
+    <style name="FuturisticCard">
+        <item name="android:background">@drawable/futuristic_card_background</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <!-- Estilo para campos de entrada -->
+    <style name="FuturisticEditText">
+        <item name="android:background">@drawable/futuristic_edittext_background</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColorHint">#80FFFFFF</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+</resources> 

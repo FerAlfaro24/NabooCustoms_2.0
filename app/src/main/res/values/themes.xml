@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Tema futurista espacial -->
+    <style name="Theme.BluetoothLedControl" parent="Theme.AppCompat.NoActionBar">
+        <!-- Colores principales -->
+        <item name="colorPrimary">#1A237E</item>
+        <item name="colorPrimaryDark">#0D1137</item>
+        <item name="colorAccent">#00BCD4</item>
+        
+        <!-- Colores de fondo y texto -->
+        <item name="android:windowBackground">@drawable/space_background</item>
+        <item name="android:textColor">#E0E0E0</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#B0BEC5</item>
+        
+        <!-- Estilos de ventana -->
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        
+        <!-- Botones y controles -->
+        <item name="buttonStyle">@style/Widget.FuturisticButton</item>
+        <item name="android:buttonStyle">@style/Widget.FuturisticButton</item>
+    </style>
+
+    <!-- Estilo de botón futurista -->
+    <style name="Widget.FuturisticButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/futuristic_button_background</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+</resources>

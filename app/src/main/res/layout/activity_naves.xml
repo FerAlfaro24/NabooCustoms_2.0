@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/futuristic_card_background"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Control BLE"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnConnectBle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar Dispositivos BLE"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnEncenderLed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encender LED"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnConnectBle"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnApagarLed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apagar LED"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnEncenderLed"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

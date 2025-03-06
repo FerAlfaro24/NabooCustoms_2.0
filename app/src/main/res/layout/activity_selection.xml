@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/futuristic_card_background"
+    android:padding="16dp">
+
+    <!-- Sección de Naves -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
+
+        <!-- Imagen de Naves -->
+        <ImageView
+            android:id="@+id/imgNave"
+            android:layout_width="330dp"
+            android:layout_height="184dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/naveseleccion" />
+
+        <!-- Botón para Naves -->
+        <Button
+            android:id="@+id/btnNaves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver Naves"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <!-- Sección de Dioramas -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Imagen de Dioramas -->
+        <ImageView
+            android:id="@+id/imgDiorama"
+            android:layout_width="330dp"
+            android:layout_height="184dp"
+            android:src="@drawable/diorama1"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Botón para Dioramas -->
+        <Button
+            android:id="@+id/btnDioramas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver Dioramas"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
